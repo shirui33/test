@@ -1,0 +1,8 @@
+import commands
+commands.getstatusoutput('ls /bin/ls')
+commands.getstatusoutput('cat /bin/junk')
+commands.getstatusoutput('/bin/junk')
+commands.getoutput('ls /bin/ls')
+commands.getstatus('/bin/ls')
+(status, output) = commands.getstatusoutput('cat /proc/cpuinfo')
+print status, output
